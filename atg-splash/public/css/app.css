@@ -1,3 +1,11 @@
+/**
+Colours:
+    Dark Bg:  #13161C
+    Light Beige: #f2cf8d
+    Darker Beige: #a66329
+    Brown: #593d1b
+*/
+
 .container {
     height:100%;
     background-color:  #13161C;
@@ -9,7 +17,7 @@
     height: 30rem;
 }
 
-.hero-image {
+.fire-wrapper {
     display: block;
     margin-left:auto;
     margin-right:auto;
@@ -21,6 +29,7 @@
     WHO
 */
 .container-who {
+    background-color:#f2cf8d;
     width:100%;
     display: flex;
     justify-content: center;
@@ -37,22 +46,34 @@
     WHAT
 */
 .container-what {
+    background-color:#a66329;
     width:100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    cursor: pointer;
 }
 
 .container-what h1 {
     font-size: 10rem;
     color: white;
     font-weight: bolder;
+    width:100%;
+}
+
+.container-what details {
+    width:100%;
+    font-size: 3rem;
+    background-color:white;
 }
 
 /**
     WHY
 */
 .container-why {
+    background-color:#593d1b;
     width:100%;
     display: flex;
     justify-content: center;
