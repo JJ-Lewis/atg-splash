@@ -24,7 +24,10 @@
             }
         </style>
         @livewireStyles
+        <!-- Alpine Plugins -->
+        <script defer src="https://unpkg.com/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
         <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
         
     </head>
     <body>
@@ -32,7 +35,7 @@
          <div class="container">
             <livewire:who />
             <livewire:what/>
-            <livewire:why />
+            <livewire:projects />
          </div>
          @livewireScripts   
     </body>

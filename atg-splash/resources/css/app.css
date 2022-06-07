@@ -1,3 +1,11 @@
+/**
+Colours:
+    Dark Bg:  #13161C
+    Light Beige: #f2cf8d
+    Darker Beige: #a66329
+    Brown: #593d1b
+*/
+
 .container {
     height:100%;
     background-color:  #13161C;
@@ -6,62 +14,171 @@
 .hero {
     background-color: #13161C;
     width: 100%;
-    height: 30rem;
+    margin:auto;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 4rem;
 }
 
-.hero-image {
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
-    width: 15rem;
-    height: 15rem;
+.hero-statement {
+    align-items: center;
+    margin: auto;
+    font-size: 1.7rem;
+    color: white;
+    text-align: center;
+    padding-bottom: 2rem;
 }
 
+.fire-wrapper {
+    display:relative;
+    align-items: center;
+    justify-content: center;
+    top:1rem;
+    width: 25rem;
+    height: 25rem;
+}
+
+.join-wrapper {
+    text-align: center;
+}
+  
 /**
     WHO
 */
 .container-who {
+    background-color:#f2cf8d;
     width:100%;
-    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
 }
 
 .container-who h1 {
     font-size: 10rem;
     color: white;
     font-weight: bolder;
+    width:100%;
+}
+
+.details-who {
+    width:100%;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.column-who {
+    font-size: 1.5rem !important;
+    max-width: 50%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin: auto;
+    padding-bottom:2rem;
+    padding-top:2rem;
+    border-radius:0.5rem;
+    background-color: #593d1b;
+}
+
+.column-who h3 {
+    font-size: 2.5rem;
 }
 
 /**
     WHAT
 */
 .container-what {
+    background-color:#a66329;
     width:100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    cursor: pointer;
+    padding-bottom:6rem;
 }
 
 .container-what h1 {
     font-size: 10rem;
     color: white;
     font-weight: bolder;
+    width:100%;
+}
+
+.details-what {
+    width:100%;
+    font-size: 2rem;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.column-what {
+    font-size: 1.25rem !important;
+    max-width: 25%;
+    padding-left: 2%;
+    padding-right: 2%; 
+    background-color: #593d1b;
+    border-radius: 0.4em;
+    padding-bottom: 2.5rem;
+}
+
+.column-what h3 {
+    margin-top: 0;
+    font-size: 2.5rem;
+}
+
+.column-what i {
+    font-size: 2rem;
 }
 
 /**
     WHY
 */
-.container-why {
+.container-projects {
+    background-color:#593d1b;
     width:100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    cursor: pointer;
 }
 
-.container-why h1 {
+.container-projects h1 {
     font-size: 10rem;
     color: white;
     font-weight: bolder;
+    width:100%;
 }
+
+.details-projects {
+    width:100%;
+    font-size: 3rem;
+    color: white;
+}
+
+/* animation keyframes */
+
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeInUp {
+    animation: fadeInUp 1s;
+}
+
 
